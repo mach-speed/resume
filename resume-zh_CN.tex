@@ -25,7 +25,7 @@
 \datedsubsection{\textbf{哈尔滨工业大学}\space 本科，计算机科学}{2016.09 -- 2020.06}
 \begin{onehalfspacing}
 学院排名约30$\%$。
-对编程语言和计算模型感兴趣。Scheme/Erlang/Haskell等函数式语言有了解。
+对编程语言和计算模型感兴趣。Lisp/Erlang/Haskell等函数式语言有了解。
 计算理论/算法/CSAPP/数学公共课/离散数学等课程排名前15$\%$。
 
 \end{onehalfspacing}
@@ -35,17 +35,17 @@
 \datedsubsection{\textbf{字节跳动}\space IES数据策略（现Growth增长智能-抖音），大数据工程师}{2020.07 - 2021.04}
 \begin{itemize}
   \item 抖音火山的活动，策略，算法相关数据支持。承担春节期间抖火主会场50$\%$以上指标开发，及方案验证。四人小组峰值CPU核数60k+。
-  \item 数据可视化平台Golang后端开发，实现了各类BI需求。在数据链路上验证了ClickHouse方案的可用性（近似聚合，分片，抽样，BloomFilter等feature）。
-  \item 实时AB数据开发，使用CoProcessFunction拼接AB流和事件流（low level join）。相比此前普遍使用的Hive方案，AB数据反馈最小周期从3小时以上，降低到分钟级。
-  \item 抖音极速版的特征和样本开发。包括实时特征计算和实时样本拼接。
+  \item 数据可视化平台Golang后端开发，实现了各类BI需求，组内验证了ClickHouse方案的可用性（近似聚合，分片，抽样，BloomFilter等feature）。
+  \item 实时AB数据开发，使用CoProcessFunction拼接AB流和事件流（low level join，直接使用state）。相比此前普遍使用的Hive方案，AB数据反馈最小周期从3小时以上，降低到分钟级。
+  \item 抖音极速版的特征和样本开发。主要是实时特征计算和实时样本拼接。
 \end{itemize}
 \end{onehalfspacing}
 
 \begin{onehalfspacing}
 \datedsubsection{\textbf{字节跳动}\space Growth数据应用，大数据工程师}{2021.05 - 至今}
 \begin{itemize}
-  \item Growth的特征开发。承担了头条极速版和电商等业务主要的实时特征工作。
-  \item 实现了实时累计用户使用时长等较复杂的特征需求。
+  \item Growth的特征开发。承担头条极速版和电商等业务需求，并在组内负责大部分的实时特征工作。
+  \item 实时累计窗口（用户使用时长），近期滑动窗口，等较复杂需求的实现及优化。
 \end{itemize}
 \end{onehalfspacing}
 
@@ -53,9 +53,9 @@
 \section{\faCogs\ 技术栈}
 % increase linespacing [parsep=0.5ex]
 \begin{itemize}[parsep=0.5ex]
-  \item Flink，在小组内对流式计算应用，学习最多，有Debug经验，理解Metric和Web UI中各项数据含义。读过Stream System，及Flink主要相关论文（Dataflow，异步快照，MillWheel等）。
-  \item Hive/Spark/ClickHouse有较多使用经验。小组内承担复杂Scala Spark任务迁移到SQL的需求。
-  \item 熟悉Scala，Java，Python的Numpy/Pandas计算库。
+  \item Flink，组内应用和学习流计算最多，理解Metric和Web UI各项数据含义。读过Stream System及主要相关论文（Dataflow，异步快照，MillWheel等）。
+  \item Hive/Spark/ClickHouse有使用经验。承担过复杂Scala Spark任务迁移到SQL的需求。
+  \item 熟悉Scala，Java，和Python的Numpy/Pandas计算库。
   \item 对ML了解在同级生平均水平以上。在校做过基于Tensorflow的简单项目。有ML场景下数据链路工作经验。
   \item 大一过四六级。有熟练的文档阅读能力。
 
@@ -65,7 +65,7 @@
 \section{\faInfo\ 自我评价}
 % increase linespacing [parsep=0.5ex]
 \begin{onehalfspacing}
-对分布式计算相关领域有热情。
+对计算机科学本身有热情。
 追求业务价值和技术进步的统一。
 工作有责任感能投入。
 \end{onehalfspacing}
