@@ -17,35 +17,35 @@
 
 \basicInfo{
   \email{974558391@qq.com} \textperiodcentered\ 
-  \phone{(+86) 137-1825-7093} \textperiodcentered\ 
+  \phone{(+86) 188-4559-9348} \textperiodcentered\ 
   \textsection{出生年月: 1998.12}
   }
  
 \section{\faGraduationCap\  教育背景}
 \datedsubsection{\textbf{哈尔滨工业大学}\space 本科，计算机科学}{2016.09 -- 2020.06}
 \begin{onehalfspacing}
-学院排名约30$\%$。
-对编程语言和计算模型感兴趣。Lisp/Erlang/Haskell等函数式语言有了解。
-计算理论/算法/CSAPP/数学公共课/离散数学等课程排名前15$\%$。
+学院排名约30$\%$。计算理论/算法/CSAPP/数学公共课/离散数学等课程排名前15$\%$。
 
 \end{onehalfspacing}
 
 \section{\faUsers\ 工作经历}
+
 \begin{onehalfspacing}
-\datedsubsection{\textbf{字节跳动}\space IES数据策略（现Growth增长智能-抖音），大数据工程师}{2020.07 - 2021.04}
+\datedsubsection{\textbf{阿里巴巴}\space 智能引擎（前搜索推荐事业部）-预测引擎。开发工程师}{2021.08 - 至今}
 \begin{itemize}
-  \item 抖音火山的活动，策略，算法相关数据支持。承担春节期间抖火主会场50$\%$以上指标开发，及方案验证。四人小组峰值CPU核数60k+。
-  \item 数据可视化平台Golang后端开发，实现了各类BI需求，组内验证了ClickHouse方案的可用性（近似聚合，分片，抽样，BloomFilter等feature）。
-  \item 实时AB数据开发，使用CoProcessFunction拼接AB流和事件流（low level join，直接使用state）。相比此前普遍使用的Hive方案，AB数据反馈最小周期从3小时以上，降低到分钟级。
-  \item 抖音极速版的特征和样本开发。主要是实时特征计算和实时样本拼接。
+  \item HA3 SQL样本实验开发，通过实时展开星形模型，实现了训练任务ad-hoc查询多个表组合的样本，用跨样本共享物理表的方式节省了相当多的存储成本（在做列实验的场合）
+  \item 实现了序列join功能，将存储占比最大的序列特征，每一组只保留序列id，该组序列特征用右表维表和序列id结合补全。工作内容包括python sdk开发，calicte模块扩展（rel2sql和sql2rel），meta管理。
+  \item 样本平台升级接入管控平台的新方案，实现了集群拉起，和数据表的构建周期自动管理。在接入期间对管控平台的许多功能进行了各项完善。
+  \item 样本平台开始接入各个业务使用后，承担了大约40$\%$的答疑和运维工作。包括发现各种内部组件的瓶颈，推进bug发现和修复。
 \end{itemize}
 \end{onehalfspacing}
 
 \begin{onehalfspacing}
-\datedsubsection{\textbf{字节跳动}\space Growth数据应用，大数据工程师}{2021.05 - 至今}
+\datedsubsection{\textbf{字节跳动}\space   互娱研发-数据策略/Growth-数据应用。大数据工程师}{2020.07 - 2021.08}
 \begin{itemize}
-  \item Growth的特征开发。承担头条极速版和电商等业务需求，并在组内负责大部分的实时特征工作。
-  \item 实时累计窗口（用户使用时长），近期滑动窗口，等较复杂需求的实现及优化。
+  \item 抖音/火山/头条/电商的活动/策略/算法相关数据开发。四人小组峰值CPU核数60k+
+  \item 数据可视化平台Go后端开发，实现了各类BI需求，技术选型有预计算和ClickHouse聚合。
+  \item 在组内负责大部分的实时特征工作，比较复杂的有使用CoProcessFunction拼接AB流和事件流，相比此前普遍使用的Hive方案，AB数据反馈周期从3小时以上，降低到分钟级；实时累计窗口（用户使用时长）；近期滑动窗口。
 \end{itemize}
 \end{onehalfspacing}
 
@@ -53,10 +53,11 @@
 \section{\faCogs\ 技术栈}
 % increase linespacing [parsep=0.5ex]
 \begin{itemize}[parsep=0.5ex]
-  \item Flink，小组内对流式计算应用和学习最多，有Debug经验，理解Metric和Web UI中各项数据含义。读过Stream System及Flink相关主要论文（Dataflow，异步快照，MillWheel等）。
-  \item Hive/Spark/ClickHouse有使用经验。小组内承担过复杂Scala Spark任务迁移到SQL的需求。
-  \item 熟悉Scala，Java，Python的Numpy/Pandas计算库。
-  \item 对ML了解在同级生平均水平以上。在校做过基于Tensorflow的简单项目。有ML场景下数据链路工作经验。
+  \item 工作范围内，实际有用过的语言有Java，Python，Scala，Go。数据库有用过Mysql，MongoDB，Redis。可视化平台，管控平台（既有样本meta，也有更基础的离线表，在线表，集群，拉起，sync，等管控），等都有实际开发的经验。工作中会用到的C++开发的组件，有一定debug能力。
+  \item 大数据相关Flink了解比较多，理解原理和概念。Hive/Spark/ClickHouse/Hologres/Ha3都有过使用经验（做过基于这些技术选型的方案，Hologres/Ha3是在阿里期间做的样本平台的数据链路实现）。接触过一点calcite优化的概念，有做过样本平台的table api（relnode树到sql）和sql parser。有扩展过sql 方言。
+  \item Emacs, Git, ssh, screen, perf, docker，等开发和运维工具，有一定的掌握和了解，有在自己工作范围内的运维经验。
+  \item 日常使用 Linux，熟悉UNIX/Linux环境。近期有读过计算机组成原理-软硬件接口/量化研究方法。有学过Rust语言。
+  \item 对机器学习有基础的了解，工作都算是和泛机器学习平台相关的。用户遇到的问题能帮助debug一部分。
   \item 大一过四六级。有熟练的文档阅读能力。
 
   
@@ -65,9 +66,7 @@
 \section{\faInfo\ 自我评价}
 % increase linespacing [parsep=0.5ex]
 \begin{onehalfspacing}
-对计算机科学本身有热情。
-追求业务价值和技术进步的统一。
-工作有责任感能投入。
+对计算机科学本身有热情。工作有责任感，能投入。做事有始有终。重视业务和技术价值的统一。
 \end{onehalfspacing}
 
 %% Reference
